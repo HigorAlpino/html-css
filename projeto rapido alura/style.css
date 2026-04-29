@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap');
+
+* {font-family: "Orbitron", sans-serif;}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.856);
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 0px 60px 60px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 100;
+    font: 700 1.2vw "Orbitron", sans-serif;
+}
+
+ header > picture > img {
+    margin-top: 10px;
+    height: 1.5vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5vw 1.2vw;
+}
+
+header > nav > a > img {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+header nav a:hover {
+    background-color: black;
+    color: white;
+    padding: 0.5vw 1.2vw;
+    border-radius: 10px 2px 10px 2px;
+    transition: all 0.5s ease;
+}
+
+#link_especifico {
+    background-color: orangered;
+    padding: 0.5vw 1.2vw;
+    border-radius: 10px 2px 10px 2px;
+   
+}
+
+#link_especifico:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    min-height: 200px;
+    position: relative;
+}
+
+div > picture#pragmata {
+    position: absolute;
+    top: 5vh;
+    left: 20vh;
+    z-index: 1;
+}
+
+
+
+div > picture#disponivel {
+    position: absolute;
+    top: 65vh;
+    left: 45vh;
+    z-index: 2;
+}
+
+
+
+div > button#button-main {
+    letter-spacing: 0.075em;
+    position: absolute;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    text-shadow: 0px 0px 10px rgb(194, 194, 34);
+    font: 800 1.5vw "Orbitron", sans-serif;
+    top: 74vh;
+    left: 53vh;
+    z-index: 2;
+}
+
+div > picture#disponivel:hover{
+    transform: scale(1.05);
+    filter: saturate(1.2);
+    transition: all 0.5s ease;
+}
+
+div > picture#plataformas {
+    position: absolute;
+    transform: scale(0.4);
+    top: 61vh;
+    left: 13vh;
+    letter-spacing: 25px;
+    z-index: 3;
+    filter: drop-shadow(3px 0px 50px #ffffff);
+}
+main {
+    height: 100px;
+}
+main > div > p {
+    font: 800 2.5vw "Orbitron", sans-serif;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 92vh;
+    left: 24vh;
+    z-index: 3;
+    text-shadow: 0px 0px 30px rgb(54, 73, 241);
+}
+
+
+
+main > div > p:hover{
+    color: orangered;
+    transform: translateX(1em);
+    transition: all 0.3s linear;
+}
+
+
+
+main > div > p::before {
+    font: 800 2.5vw "Orbitron", sans-serif;
+    content: "||";
+    transition: all 0.8s ease-in-out;
+    letter-spacing: 25px;
+    opacity: 0;
+}
+
+
+main > div > p:hover::before{
+    color: orangered;
+    opacity: 1;
+    transform: translate(10px, 50%);
+}
+nav.modific {
+    margin-top: 800px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px dashed rgb(255, 255, 255);
+    border-top: 2px solid black;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+button#documentos {
+    font-size: 1.2em;
+    border: none;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    border-radius: 0px 15px 0px 15px;
+
+}
+nav.modific::after{
+    content: "||";
+    font-size: 2em;
+    color: orangered;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    letter-spacing: 25px;
+}
+nav.modific:hover::after{
+    opacity: 1;
+    transform: translate(20px, 20%);
+}
+nav.modific::before{
+    content: "||";
+    font-size: 2em;
+    color: orangered;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    letter-spacing: 25px;
+
+}
+nav.modific:hover::before{
+    opacity: 1;
+    transform: translate(0px, 20%);
+}
+button#documentos:hover {
+    background-color: orangered;
+    color: white;
+    transition: all 0.8s ease;
+
+}
+
+article {
+    position: relative;
+    bottom: -60px;
+    height: 1300px;
+    width: 900px;
+    margin: auto;
+    background-image: url("samurai/frame_pattern_2.png");
+    background-repeat: no-repeat;
+    background-size: 900px 1000px;
+    background-position: 10px 50px;
+    
+}
+
+.capa_artigo{
+    position: absolute;
+    top: -8vh;
+    font: bold 2em "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    background-color: orangered;
+    border-radius: 0px 0px 15px 0px;
+    padding: 5px;
+}
+
+.content{
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+.content::after{
+    position: absolute;
+    top: -5vh;
+    left: 35vh;
+    font-size: 2em;
+    font-weight: 800;
+    content: "||||||||||";
+    color: orangered;
+    letter-spacing: 60px;
+}
+
+p.exibição{
+    color: orangered;
+    position: absolute;
+    top: 30vh;
+    left: 67vh;
+    display: flex;
+    justify-content: last baseline;
+    font: bold 2em "Orbitron", sans-serif;
+    opacity: 1;
+}
+img.exibição{
+    position: absolute;
+    top: 3vh;
+    z-index: 1;
+
+}
+img.exibição:hover{
+    filter: drop-shadow(0px 0px 100px rgb(24, 157, 245));
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+li{
+    list-style: none;
+}
+ul#item1{
+    font-size: 1.1em;
+    margin: 0px;
+    position: absolute;
+    top: 44vh;
+    left: 68vh;
+    padding: 5px;
+    z-index: 2;
+}
+ul#item2{
+    font-size: 1.1em;
+    margin: 0px;
+    position: absolute;
+    top: 54vh;
+    left: 68vh;
+    padding: 5px;
+    z-index: 2;
+}
+ul#item1:hover{
+    color: orangered;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+ul#item2:hover{
+    color: orangered;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+div.text{
+    height: 700px;
+    
+}
+div.box_text{
+   position: absolute;
+   top: 80vh; 
+   left: 10vh;
+   font-size: 1em;
+}
+
+aside {
+    position: relative;
+    height: 1000px;
+    width: 900px;
+    margin: auto;
+    border-bottom: 4px solid black;
+}
+
+aside:hover {
+filter: drop-shadow(0px 0px 200px #189df5);
+transition: all 0.5s ease;
+}
+
+button#demo{
+    border: none;
+    height: 789px;
+    width: 912px;
+    background-color: white;
+    background-image: url(samurai/frame_pattern_2.png);
+    background-repeat: no-repeat;
+    background-size: 901px 782px;
+}
+
+
+span#demo{
+    position: absolute;
+    top: 9vh;
+    left: 42vh;
+    font: bolder 3em "Orbitron", sans-serif;
+    color: orangered;
+    letter-spacing: 44px;
+    filter: drop-shadow(-4px 2px 0px rgba(0, 0, 0, 0.733));
+    z-index: 2;
+}
+span{
+    position: absolute;
+    top: 17vh;
+    left: 13vh;
+    font: bold 1em "Orbitron", sans-serif;
+    letter-spacing: 20px;
+    z-index: 2;
+}
+button > img#retoque {
+    position: absolute;
+    top: 6vh;
+    left: 13vh;
+    z-index: 1;
+}
+
+button > img#retoque:hover {
+transform: scale(1.1);
+transition: all 0.5s ease;
+}
+
+button > img{
+    position: absolute;
+    top: 37vh;
+    left: 21vh;
+    z-index: 0;
+}
+button > img#retoque:hover{
+    filter: drop-shadow(0px 0px 50px rgb(24, 157, 245));
+}
+
+footer{
+    position: relative;
+    background-image: url(imagens/mainvisual_2.webp), radial-gradient(circle, rgb(30, 88, 247) 400px, transparent);
+    background-position: 100px -683px , center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    position: static;
+    align-items: center;
+    height: 500px;
+}
+#fooder-image{
+    position: absolute;
+    height: 480px;
+    left: 0px;
+    top: 3418px;
+    filter: drop-shadow(0px 0px 10px rgb(104, 104, 104));
+}
+footer > img{
+    position: absolute;
+    left: 31vh;
+    height: 50px;
+}
+
+footer > button {
+    position: absolute;
+    left: 118vh;
+    top: 414vh;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px ;
+    font-size: 1.5em;
+    padding: 2px;
+}
+footer > button::before{
+    content: "||";
+    color: orangered;
+    font: 1.5em;
+    letter-spacing: 10px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+footer > button:hover::before{
+    opacity: 1;
+}
+footer > button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition:all 0.5s ease-in-out;
+    border-bottom: 3px solid orangered;
+    border-right: 3px solid orangered;
+}
+
+@media (max-width: 1400px){
+    div > picture#disponivel {
+        top: 46vh;
+        left: 40vh;
+    }
+    div > button#button-main {
+        font-size: 1em;
+        top: 52vh;
+        left: 47vh;
+    }
+    div > picture#plataformas {
+        width: 1350px;
+        top: 41vh;
+        left: -5vh;
+    }
+    main > div > p {
+        top: 58vh;
+        left: 20vh;
+    }
+}
+
+
+
+@media (max-width: 1000px){
+    div > picture#pragmata {
+        left: 0vh;
+    }
+    div > picture#disponivel {
+        top: 48vh;
+        left: 30vh;
+    }
+    div > picture#plataformas {
+        top: 42vh;
+        left: -15vh;
+    }
+    div > button#button-main {
+        font-size: 1.1em;
+        top: 54vh;
+        left: 36vh;
+    }
+    main > div > p {
+        top: 58vh;
+        left: 8vh;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    div > picture#pragmata {
+
+        left: 0vh;
+
+    }
+    div > button#button-main {
+
+        font-size: 1.0em;
+
+        top: 86vh;
+
+        left: 18vh;
+
+    }
+    div > picture#disponivel {
+        top: 80vh;
+        left: 10vh;
+
+    }
+    div > picture#plataformas {
+        top: 75vh;
+        left: -38vh;
+    }
+    main > div > p {
+
+        font-size: 1.2em;
+        top: 100vh;
+        left: 2vh;
+
+    }
+    article{
+        
+    }
+
+}
