@@ -2,4 +2,4 @@
 
 curso de html e css
 
-<a hrlf=!"https://higoralpino.github.io/html-css/projetorapidoalura/index.html">Pragmata</a>
+<a hrlf="https://higoralpino.github.io/html-css/pragmata/index.html">Pragmata</a>
